@@ -3,19 +3,18 @@ return {
     branch = "v3.x",
     dependencies = {
         "nvim-lua/plenary.nvim",
-        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        "nvim-tree/nvim-web-devicons",
         "MunifTanjim/nui.nvim",
-        -- {"3rd/image.nvim", opts = {}}, -- Optional image support in preview window: See `# Preview Mode` for more information
     },
     config = function()
         require('neo-tree').setup {
             filesystem = {
                 filtered_items = {
-                    visible = true, -- This is what you want: If you set this to `true`, all "hide" just mean "dimmed out"
+                    visible = true,
                 }
             }
         }
-        vim.cmd("Neotree filesystem right reveal ")
+        vim.cmd("Neotree filesystem right reveal")
         vim.cmd("Neotree focus")
     end,
 }

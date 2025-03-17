@@ -8,15 +8,17 @@ return {
     {
         "williamboman/mason-lspconfig.nvim",
         config = function()
-            require("mason-lspconfig").setup({
-                esure_installed = {
-                    "lua_ls",
-                    "verible",
-                    "vhdl_ls",
-                    "clangd",
-                    "bashls",
-                },
-            })
+            require("mason-lspconfig").setup(
+                {
+                    esure_installed = {
+                        "lua_ls",
+                        "verible",
+                        "vhdl_ls",
+                        "clangd",
+                        "bashls",
+                    },
+                }
+            )
         end,
     },
     {
