@@ -12,6 +12,12 @@ return {
     {
         "hrsh7th/nvim-cmp",
         config = function()
+            local ls = require("luasnip")
+            ls.config.set_config {
+                history = false,
+                updateevents = "TextChanged, TextChangedI"
+            }
+
             local cmp = require("cmp")
             require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -28,6 +34,7 @@ return {
                 sources = cmp.config.sources({
                     { name = "nvim_lsp" },
                     { name = "luasnip" },
+                    { name = "path" },
                 }, {
                     { name = "buffer" },
                 }),
