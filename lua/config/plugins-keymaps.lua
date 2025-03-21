@@ -1,18 +1,14 @@
--- telescope keymaps
 local builtin = require("telescope.builtin")
 vim.keymap.set({ "n", "v" }, "<leader>ff", builtin.find_files, {})
 vim.keymap.set({ "n", "v" }, "<leader>fg", builtin.live_grep, {})
 
--- Neotree keymaps
 vim.keymap.set("n", "<leader>e", ":Neotree filesystem right focus toggle<CR>")
 vim.keymap.set("n", "<leader>hd", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 
--- format keymap
 vim.keymap.set("n", "<leader>p", vim.lsp.buf.format, {})
 
--- autocompletion keymaps
 local cmp = require("cmp")
 cmp.setup({
     mapping = {
@@ -27,8 +23,8 @@ cmp.setup({
     },
 })
 
--- snippets motion keymaps
 local ls = require("luasnip")
+
 
 vim.keymap.set({ "i", "s" }, "<C-k>", function()
     if ls.expand_or_jumpable() then

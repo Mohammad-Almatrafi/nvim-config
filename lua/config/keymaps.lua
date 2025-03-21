@@ -1,6 +1,6 @@
--- leader key mapping
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+-- commenting lines (might be changed later)
+-- vim.keymap.set("n", "<leader>cl", "g@_", {})
+-- vim.keymap.set("v", "<leader>cl", "g@_", {})
 
 -- moving lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {})
