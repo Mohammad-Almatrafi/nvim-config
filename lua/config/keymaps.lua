@@ -29,6 +29,6 @@ vim.keymap.set("n", "<", "<<", {})
 vim.keymap.set("v", "<", "< gv", {})
 
 -- nice to have
-vim.keymap.set("n", "<leader>w", ":w!<CR>", {})
-vim.keymap.set("n", "<leader>q", ":q!<CR>", {})
-vim.keymap.set("n", "<leader>x", ":x!<CR>", {})
+-- vim.keymap.set("n", "<leader>w", ":w!<CR>", {})
+-- vim.keymap.set("n", "<leader>q", ":q!<CR>", {})
+-- vim.keymap.set("n", "<leader>x", ":x!<CR>", {})
