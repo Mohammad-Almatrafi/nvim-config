@@ -38,5 +38,16 @@ vim.keymap.set({ "i", "s" }, "<C-j>", function()
     end
 end, { silent = true })
 
-
-
+-- noice plugin keymaps
+vim.keymap.set({ "n", "v" }, "<leader>snh", function()
+    require("noice").cmd("history")
+end)
+vim.keymap.set({ "n", "v" }, "<leader>sna", function()
+    require("noice").cmd("all")
+end, {})
+vim.keymap.set({ "n", "v" }, "<leader>snd", function()
+    require("noice").cmd("dismiss")
+end, {})
+vim.keymap.set({ "n", "v" }, "<leader>snt", function()
+    require("noice").cmd("pick")
+end, {})
