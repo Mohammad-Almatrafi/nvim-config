@@ -8,7 +8,6 @@ vim.keymap.set("n", "J", "mzJ`z", {})
 -- when using pg-up and pg-dn center the page
 vim.keymap.set("n", "<C-d>", "<C-d>zz", {})
 vim.keymap.set("n", "<C-u>", "<C-u>zz", {})
-
 -- when using next and prev search term center the page
 vim.keymap.set("n", "n", "nzzzv", {})
 vim.keymap.set("n", "N", "Nzzzv", {})
@@ -28,7 +27,9 @@ vim.keymap.set("v", ">", "> gv", {})
 vim.keymap.set("n", "<", "<<", {})
 vim.keymap.set("v", "<", "< gv", {})
 
--- nice to have
--- vim.keymap.set("n", "<leader>w", ":w!<CR>", {})
--- vim.keymap.set("n", "<leader>q", ":q!<CR>", {})
--- vim.keymap.set("n", "<leader>x", ":x!<CR>", {})
+-- to switch between splited windows
+vim.keymap.set("n", "<C-h>", ":wincmd h <CR>",  {})
+vim.keymap.set("n", "<C-j>", ":wincmd j <CR>", {})
+vim.keymap.set("n", "<C-k>", ":wincmd k <CR>", {})
+vim.keymap.set("n", "<C-l>", ":wincmd l <CR>", {})
+
