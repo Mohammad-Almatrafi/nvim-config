@@ -8,7 +8,7 @@ require("config.keymaps")
 require("config.lazy")
 require("config.plugins-keymaps")
 
-vim.cmd("colorscheme rose-pine-main")
+vim.cmd("colorscheme rose-pine-moon")
 
 require("config.transparency")
 
