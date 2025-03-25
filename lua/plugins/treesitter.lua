@@ -6,6 +6,7 @@ return {
         local configs = require("nvim-treesitter.configs")
         configs.setup({
             ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "verilog" },
+            auto_install = true,
             highlight = { enable = true },
             indent = { enable = true },
         })
