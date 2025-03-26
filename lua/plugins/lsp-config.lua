@@ -47,7 +47,6 @@ return {
                 virtual_text = true,           -- Hide inline text
                 signs = true,                   -- Shows signs on the gutter
                 underline = true,               -- Underlines the error
-                float = { border = "rounded" }, -- Floating window with borders
                 update_in_insert = false,
                 severity_sort = true,
 
