@@ -15,7 +15,6 @@ return {
                 }
             }
         }
-        vim.cmd("Neotree filesystem right reveal ")
-        vim.cmd("Neotree focus")
+        vim.cmd("Neotree close")
     end,
 }
