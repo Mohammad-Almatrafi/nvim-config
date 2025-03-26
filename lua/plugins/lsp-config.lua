@@ -43,20 +43,14 @@ return {
                 capabilities = capabilities
             })
 
-            vim.api.nvim_create_autocmd('FileType', {
-                -- This handler will fire when the buffer's 'filetype' is "systemverilog" or "verilog"
-                pattern = { 'verilog', 'systemverilog' },
-                callback = function()
-                    vim.lsp.start({
-                        name = 'verible',
-                        cmd = { 'verible-verilog-ls', '--rules_config_search' },
-                    })
-                end,
-            })
+            vim.diagnostic.config({
+                virtual_text = true,           -- Hide inline text
+                signs = true,                   -- Shows signs on the gutter
+                underline = true,               -- Underlines the error
+                float = { border = "rounded" }, -- Floating window with borders
+                update_in_insert = false,
+                severity_sort = true,
 
-
-            vim.lsp.config('verible', {
-                filetypes = { 'verilog', 'systemverilog' },
             })
         end,
 
