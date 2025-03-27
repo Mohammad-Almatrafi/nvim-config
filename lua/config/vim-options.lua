@@ -43,7 +43,7 @@ vim.opt.listchars = {
     tab = '» ', -- Highlight tabs
     trail = '·', -- Highlight trailing spaces
     nbsp = '␣', -- Highlight non-breaking spaces
-    lead = '.', -- Highlight leading spaces
+    lead = '·', -- Highlight leading spaces
 }
 
 -- Preview substitutions live, as you type!
